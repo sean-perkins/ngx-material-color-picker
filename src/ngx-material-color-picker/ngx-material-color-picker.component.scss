@@ -1,0 +1,144 @@
+@import '~@angular/material/theming';
+
+$colors: 'blue', 'green', 'red', 'yellow', 'orange', 'pink', 'purple', 'indigo', 'cyan', 'teal', 'lime', 'amber', 'brown', 'grey';
+
+.color {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    &.active {
+        border: 3px solid white;
+        border-radius: 3px;
+    }
+}
+
+$ranges: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+
+.mat {
+    &-blue {
+        @each $range in $ranges {
+            &-#{$range} {
+                background-color: map_get($mat-blue, $range);
+            }
+        }
+    }
+    &-green {
+        @each $range in $ranges {
+            &-#{$range} {
+                background-color: map_get($mat-green, $range);
+            }
+        }
+    }
+    &-red {
+        @each $range in $ranges {
+            &-#{$range} {
+                background-color: map_get($mat-red, $range);
+            }
+        }
+    }
+    &-yellow {
+        @each $range in $ranges {
+            &-#{$range} {
+                background-color: map_get($mat-yellow, $range);
+            }
+        }
+    }
+    &-orange {
+        @each $range in $ranges {
+            &-#{$range} {
+                background-color: map_get($mat-orange, $range);
+            }
+        }
+    }
+    &-pink {
+        @each $range in $ranges {
+            &-#{$range} {
+                background-color: map_get($mat-pink, $range);
+            }
+        }
+    }
+    &-purple {
+        @each $range in $ranges {
+            &-#{$range} {
+                background-color: map_get($mat-purple, $range);
+            }
+        }
+    }
+    &-indigo {
+        @each $range in $ranges {
+            &-#{$range} {
+                background-color: map_get($mat-indigo, $range);
+            }
+        }
+    }
+    &-cyan {
+        @each $range in $ranges {
+            &-#{$range} {
+                background-color: map_get($mat-cyan, $range);
+            }
+        }
+    }
+    &-teal {
+        @each $range in $ranges {
+            &-#{$range} {
+                background-color: map_get($mat-teal, $range);
+            }
+        }
+    }
+    &-lime {
+        @each $range in $ranges {
+            &-#{$range} {
+                background-color: map_get($mat-lime, $range);
+            }
+        }
+    }
+    &-amber {
+        @each $range in $ranges {
+            &-#{$range} {
+                background-color: map_get($mat-amber, $range);
+            }
+        }
+    }
+    &-brown {
+        @each $range in $ranges {
+            &-#{$range} {
+                background-color: map_get($mat-brown, $range);
+            }
+        }
+    }
+    &-grey {
+        @each $range in $ranges {
+            &-#{$range} {
+                background-color: map_get($mat-grey, $range);
+            }
+        }
+    }
+    &-deep-orange {
+        @each $range in $ranges {
+            &-#{$range} {
+                background-color: map_get($mat-deep-orange, $range);
+            }
+        }
+    }
+    &-light-green {
+        @each $range in $ranges {
+            &-#{$range} {
+                background-color: map_get($mat-light-green, $range);
+            }
+        }
+    }
+    &-light-blue {
+        @each $range in $ranges {
+            &-#{$range} {
+                background-color: map_get($mat-light-blue, $range);
+            }
+        }
+    }
+    &-deep-purple {
+        @each $range in $ranges {
+            &-#{$range} {
+                background-color: map_get($mat-deep-purple, $range);
+            }
+        }
+    }
+}

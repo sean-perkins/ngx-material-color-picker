@@ -1,0 +1,4 @@
+<div [formGroup]="form">
+    <ngx-material-color-picker formControlName="color" [intensity]="form.get('intensity').value"></ngx-material-color-picker>
+    <md-slider max="900" min="100" step="100" tickInterval="100" formControlName="intensity"></md-slider>
+</div>

@@ -1,0 +1,3 @@
+<div fxLayout="row" fxLayoutWrap="true">
+    <div fxFlex="11%" class="color" *ngFor="let color of colors" [ngClass]="colorClass(color)" (click)="selectColor(color)" [class.active]="color === currentColor"></div>
+</div>
